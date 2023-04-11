@@ -13,7 +13,7 @@ passport.use(
       clientID:
         "1023529029465-dsrlbr57hi82leb00b81e9mjadlbp8o5.apps.googleusercontent.com",
       clientSecret: "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",
-      callbackURL: "http://localhost:4500/auth/google/callback",
+      callbackURL: "https://long-erin-hummingbird-garb.cyclic.app/auth/google/callback",
     },
     async function (accessToken, refreshToken, profile, cb) {
       var { name, email } = profile._json;
