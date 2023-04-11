@@ -52,7 +52,7 @@ app.get(
     });
     console.log(token);
     res.redirect(
-      `http://127.0.0.1:5501/QR_BOT/Frontend/index.html?id=${token}&name=${user.name}`
+      `https://funny-salmiakki-704f5a.netlify.app/index.html?id=${token}&name=${user.name}`
     );
   }
 );
