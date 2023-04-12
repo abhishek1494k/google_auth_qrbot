@@ -47,12 +47,13 @@ app.get(
   function (req, res) {
     let user = req.user;
     console.log(user);
+    var userEmail = user.email;
     var token = jwt.sign({ email: user.email }, "Secret", {
       expiresIn: "1d",
     });
     console.log(token);
     res.redirect(
-      `https://funny-salmiakki-704f5a.netlify.app/index.html?id=${token}&name=${user.name}&email=${user.email}`
+      `https://funny-salmiakki-704f5a.netlify.app/index.html?id=${token}&name=${user.name}&email=${userEmail}`
     );
   }
 );
