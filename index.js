@@ -53,7 +53,7 @@ app.get(
     });
     console.log(token);
     res.redirect(
-      `http://127.0.0.1:5501/QR_BOT/Frontend/index.html?email=${userEmail}&id=${token}&name=${user.name}`
+      `https://www-qrbot-com.netlify.app/index.html?email=${userEmail}&id=${token}&name=${user.name}`
     );
   }
 );
