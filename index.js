@@ -52,7 +52,7 @@ app.get(
     });
     console.log(token);
     res.redirect(
-      `https://funny-salmiakki-704f5a.netlify.app/index.html?id=${token}&name=${user.name}`
+      `https://funny-salmiakki-704f5a.netlify.app/index.html?id=${token}&name=${user.name}&email=${user.email}`
     );
   }
 );
